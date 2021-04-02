@@ -1,0 +1,9 @@
+<form class="form" onsubmit=submitHandler novalidate>
+  <p class="form__name">{{ formHeader }}</p>
+
+  {{ componentsArray fields }}
+
+  <p class="form__errors">{{ errors }}</p>
+
+  {{{ submitButton }}}
+</form>

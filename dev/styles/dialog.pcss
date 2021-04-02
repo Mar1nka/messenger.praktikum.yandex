@@ -1,0 +1,111 @@
+.dialog-wrapper {
+  width: 100%;
+}
+
+.dialog {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 7px 16px;
+  text-decoration: none;
+  color: var(--base-text-color);
+
+  &:hover {
+    background-color: #f2f6fa;
+  }
+
+  &__meta {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  &__meta-time {
+    color: var(--field-label-color);
+  }
+
+  &__message-count {
+    display: inline-block;
+    background-color: var(--new-message);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 11px;
+    min-width: 21px;
+    text-align: center;
+    margin-top: 4px;
+    font-weight: 700;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+
+  &__photo-wrapper {
+    margin-right: 15px;
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 13px;
+    height: 44px;
+    overflow: hidden;
+    margin-right: 40px;
+  }
+
+  &__message-person,
+  &__message-context {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__message-context--history {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: unset;
+  }
+
+  &__message-person {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: 700;
+  }
+
+  &__message-context {
+    margin-top: 5px;
+    color: var(--field-label-color);
+  }
+
+  &__message--history {
+    min-height: 44px;
+    height: auto;
+    width: 100%;
+  }
+
+  &__sent-photo {
+    max-height: 100px;
+    object-fit: cover;
+  }
+}
+
+.dialog-selected {
+  &:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+  }
+}
+
+.dialog-selected .dialog__meta-time,
+.dialog-selected .dialog__message-context {
+  color: var(--white);
+}

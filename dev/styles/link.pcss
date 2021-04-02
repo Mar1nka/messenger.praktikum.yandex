@@ -1,0 +1,19 @@
+.link {
+  color: var(--main-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    transition: color 0.3s;
+    color: var(--main-color-light);
+    text-decoration: underline;
+  }
+
+  &--contrast {
+    color: var(--white);
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}

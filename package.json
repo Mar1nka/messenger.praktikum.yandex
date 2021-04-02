@@ -1,0 +1,74 @@
+{
+  "name": "mf.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "Проектная работа",
+  "main": "index.js",
+  "scripts": {
+    "build-webpack": "webpack",
+    "build-webpack-dev-server": "webpack serve",
+    "start": "node server.js",
+    "test": "jest",
+    "eslint": "eslint ./dev --ext .js,.jsx,.ts,.tsx",
+    "stylelint": "stylelint ./dev/styles .pcss",
+    "build-docker": "docker build -t web ."
+  },
+  "pre-commit": [
+    "test",
+    "eslint",
+    "stylelint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mar1nka/mf.messenger.praktikum.yandex.git"
+  },
+  "author": "Marina Sakovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mar1nka/mf.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/Mar1nka/mf.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "@babel/cli": "7.12.1",
+    "@babel/core": "7.12.3",
+    "@babel/preset-env": "7.12.1",
+    "@babel/preset-typescript": "7.12.1",
+    "@babel/register": "7.12.1",
+    "@types/webpack": "^4.41.25",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "express": "4.17.1",
+    "handlebars": "4.7.6",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "26.6.3",
+    "jest-ts-webcompat-resolver": "1.0.0",
+    "postcss": "^8.1.4",
+    "postcss-cli": "8.2.0",
+    "postcss-loader": "^4.1.0",
+    "pre-commit": "^1.2.2",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "ts-loader": "8.0.11",
+    "ts-node": "9.0.0",
+    "typescript": "4.1.2",
+    "webpack": "4.44.2",
+    "webpack-cli": "4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "xhr-mock": "2.5.1"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.15",
+    "handlebars-loader": "^1.7.1",
+    "postcss-easy-import": "3.0.0",
+    "postcss-import": "^13.0.0",
+    "postcss-nested": "^5.0.1"
+  }
+}

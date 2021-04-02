@@ -1,0 +1,21 @@
+<a href="#" class="dialog">
+  <div class="dialog__meta">
+    <span class="dialog__meta-time">{{ time }}</span>
+  </div>
+
+  <div class="dialog__photo-wrapper">
+    <img
+      class="avatar dialog__photo"
+      src="{{ imageSrc }}"
+      alt="photo"
+    >
+  </div>
+  <div class="dialog__message dialog__message--history">
+    <div class="dialog__message-person">
+      <span>{{ person }}</span>
+    </div>
+    <div class="dialog__message-context dialog__message-context--history">
+      <span>{{ context }}</span>
+    </div>
+  </div>
+</a>

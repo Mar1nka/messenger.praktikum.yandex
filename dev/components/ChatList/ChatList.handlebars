@@ -1,0 +1,32 @@
+<section class="content content_authorized">
+  <header class="header">
+    <div class="header__common">
+      <p class="header__name">{{ header }}</p>
+      {{{ createChatButton }}}
+      {{{ profileLink }}}
+    </div>
+
+    <div class="header__dialog">
+    </div>
+  </header>
+
+  <main class="main main_authorized">
+    {{{ chats }}}
+
+    {{#if selectedChatId}}
+      <section class="messages messages--empty">
+        <p>{{ chatName }}</p>
+        {{{ addUsersToChatButton }}}
+        {{{ removeUsersFromChatButton }}}
+      </section>
+    {{else}}
+      <section class="messages messages--empty">
+        <p>{{ noMessages }}</p>
+      </section>
+    {{/if}}
+  </main>
+
+  {{{ createChatModal }}}
+  {{{ addUsersToChatModal }}}
+  {{{ removeUsersFromChatModal }}}
+</section>

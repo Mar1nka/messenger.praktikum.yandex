@@ -1,0 +1,16 @@
+import './styles/main.pcss';
+// import './styles/colors.pcss';
+// import './styles/button.pcss';
+// import './styles/chats.pcss';
+// import './styles/common.pcss';
+// import './styles/dialog.pcss';
+// import './styles/error-page.pcss';
+// import './styles/form.pcss';
+// import './styles/header.pcss';
+// import './styles/link.pcss';
+// import './styles/list.pcss';
+// import './styles/messages.pcss';
+// import './styles/modal.pcss';
+// import './styles/profile.pcss';
+// import './styles/user.pcss';
+import './main';

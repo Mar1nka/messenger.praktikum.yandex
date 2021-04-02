@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb-typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "arrow-body-style": "off",
+    "import/prefer-default-export": "off",
+    "react/static-property-placement": "off"
+  }
+}

@@ -1,0 +1,25 @@
+<section class="content content_authorized">
+  <header class="header">
+    <div class="header__common">
+      <p class="header__name">{{ header }}</p>
+      {{{ chatListLink }}}
+    </div>
+
+  </header>
+
+  <main class="main main_authorized">
+    <section class="profile">
+      <div class="profile__photo-wrapper">
+        <img
+          class="avatar"
+          src="{{ avatarSrc }}"
+          alt="photo"
+        >
+      </div>
+      {{{ form }}}
+
+      {{{ logoutButton }}}
+    </section>
+  </main>
+  {{{ errorModal }}}
+</section>

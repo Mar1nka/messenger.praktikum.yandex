@@ -1,0 +1,39 @@
+.messages {
+  width: 68%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  &--empty {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__history {
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+  }
+
+  &__sending {
+    width: 100%;
+    height: 142px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 10px 16px 21px 16px;
+  }
+
+  &__sending-writing {
+    flex: 1;
+    padding: 0 15px;
+  }
+
+  &__action-button {
+    margin: 20px;
+  }
+}

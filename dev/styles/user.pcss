@@ -1,0 +1,45 @@
+.users {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 7px 16px;
+  text-decoration: none;
+  color: var(--base-text-color);
+  max-height: 400px;
+  overflow: auto;
+
+  &__list {
+    width: 100%;
+  }
+}
+
+.user-wrapper {
+  &:hover {
+    background-color: #f2f6fa;
+  }
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  color: var(--base-text-color);
+
+  &__photo-wrapper {
+    margin-right: 15px;
+    width: auto;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

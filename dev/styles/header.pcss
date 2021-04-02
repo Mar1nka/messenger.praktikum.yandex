@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--main-color);
+  color: var(--white);
+  line-height: 30px;
+  font-size: 13px;
+
+  &__name {
+    font-size: 16px;
+  }
+
+  &__common,
+  &__dialog {
+    padding: 23px 15px 22px;
+  }
+
+  &__common {
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__dialog {
+    width: 68%;
+  }
+}
